@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RomanNumbersCalculator", "RomanNumbersCalculator\RomanNumbersCalculator.csproj", "{7D8E4328-3A01-4A69-952A-01E3DF52EC0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITestsForRomanNumbersCalculator", "UITestsForRomanNumbersCalculator\UITestsForRomanNumbersCalculator.csproj", "{F162C54F-7F9F-4A99-94DC-F001AF7D4103}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D8E4328-3A01-4A69-952A-01E3DF52EC0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D8E4328-3A01-4A69-952A-01E3DF52EC0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D8E4328-3A01-4A69-952A-01E3DF52EC0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D8E4328-3A01-4A69-952A-01E3DF52EC0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F162C54F-7F9F-4A99-94DC-F001AF7D4103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F162C54F-7F9F-4A99-94DC-F001AF7D4103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F162C54F-7F9F-4A99-94DC-F001AF7D4103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F162C54F-7F9F-4A99-94DC-F001AF7D4103}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C40FED71-B3B7-41ED-A19E-B9715C913282}
+	EndGlobalSection
+EndGlobal

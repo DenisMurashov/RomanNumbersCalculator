@@ -1,0 +1,48 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:RomanNumbersCalculator.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="340" d:DesignHeight="420"
+        Width="340" Height="420"
+        x:Class="RomanNumbersCalculator.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="RomanNumbersCalculator">
+
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="1*"/>
+      <RowDefinition Height="1*"/>
+      <RowDefinition Height="1*"/>
+      <RowDefinition Height="1*"/>
+      <RowDefinition Height="1*"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="1*"/>
+      <ColumnDefinition Width="1*"/>
+      <ColumnDefinition Width="1*"/>
+      <ColumnDefinition Width="1*"/>
+    </Grid.ColumnDefinitions>
+
+
+    <TextBox Text="{Binding CurrentNumberStringRepresentation}" Name="textResult" Grid.Row="0" Grid.ColumnSpan="4"/>
+    <Button Name="buttonI" Command="{Binding AddNumber}" CommandParameter="I" Height="70" Width="75" Grid.Row="1" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" >I</Button>
+    <Button Name="buttonC" Command="{Binding AddNumber}" CommandParameter="C" Height="70" Width="75" Grid.Row="1" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" >C</Button>
+    <Button Name="buttonPlus" Command="{Binding PlusCommand}"  Height="70" Width="75" Grid.Row="1" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" >+</Button>
+    <Button Name="buttonV" Command="{Binding AddNumber}" CommandParameter="V" Height="70" Width="75" Grid.Row="2" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" >V</Button>
+    <Button Name="buttonD" Command="{Binding AddNumber}" CommandParameter="D" Height="70" Width="75" Grid.Row="2" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" >D</Button>
+    <Button Name="buttonSub" Command="{Binding SubCommand}"  Height="70" Width="75" Grid.Row="2" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" >-</Button>
+    <Button Name="buttonX" Command="{Binding AddNumber}" CommandParameter="X" Height="70" Width="75" Grid.Row="3" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" >X</Button>
+    <Button Name="buttonM" Command="{Binding AddNumber}" CommandParameter="M" Height="70" Width="75" Grid.Row="3" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" >M</Button>
+    <Button Name="buttonMul" Command="{Binding MulCommand}"  Height="70" Width="75" Grid.Row="3" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" >*</Button>
+    <Button Name="buttonDiv" Command="{Binding DivCommand}"  Height="70" Width="75" Grid.Row="3" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" >/</Button>
+    <Button Name="buttonL" Command="{Binding AddNumber}" CommandParameter="L" Height="70" Width="75" Grid.Row="4" Grid.Column="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" >L</Button>
+    <Button Name="buttonCE" Command="{Binding ResetCommand}" Height="70" Width="75" Grid.Row="4" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" >CE</Button>
+    
+    <Button Name="buttonResult" Command="{Binding CalculateCommand}" Height="70" Width="160" Grid.Row="4" Grid.Column="2"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="26" >=</Button>
+
+
+  </Grid>
+
+</Window>
